@@ -118,7 +118,7 @@ function getManagerInfo() {
             <div class="card w-25 bg-light m-3 shadow rounded">
                 <div class ="card-header text-light">
                     <h2 class="name">${newManager.name}</h2>
-                    <h3 class="title">${newManager.role}</h3>
+                    <h3 class="title"><i class="fas fa-mug-hot"></i>${newManager.role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush border">
@@ -142,7 +142,7 @@ function getEngineerInfo () {
             <div class="card w-25 bg-light m-3 shadow rounded">
                 <div class="card-header text-light">
                     <h2 class="name">${newEngineer.name}</h2>
-                    <h3 class="title">${newEngineer.role}</h3>
+                    <h3 class="title"><i class="fas fa-glasses"></i>${newEngineer.role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush border">
@@ -167,7 +167,7 @@ function getInternInfo() {
             <div class="card w-25 bg-light m-3 shadow rounded">
                 <div class="card-header text-light">
                     <h2 class="name">${newIntern.name}</h2>
-                    <h3 class="title">${newIntern.role}</h3>
+                    <h3 class="title"><i class="fas fa-graduation-cap"></i>${newIntern.role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush border">
@@ -192,6 +192,7 @@ function writeHTML() {
             <meta charset="UTF-8"/>
             <title>Team Profile Generator</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/7ca837e95d.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="./style.css"/>
         </head>
     
@@ -206,7 +207,7 @@ function writeHTML() {
             <!--Team member cards-->
             <div class="container">
                 <div class="row">
-                    <div class="team-cards">
+                    <div class="team-cards col-12 flex-row flex-wrap d-flex justify-content-center">
                         ${cardDeck}
                     </div>
                 </div>

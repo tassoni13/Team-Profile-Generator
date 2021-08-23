@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-color:teal;
+    padding: 10px;
+}
+
+#header {
+    font-family:fantasy;
+    font-weight: 400;
+}
+
+.card-header {
+    background-color:rgb(92, 91, 91);
+}
