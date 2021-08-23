@@ -113,7 +113,7 @@ let cardDeck = `<!-- Team cards added here -->`;
 
 function getManagerInfo() {
     inquirer.prompt(managerData).then((answers) => {
-        let newManager = new Manager(answers.name, answers.id, answers.email, answers.phone);
+        let newManager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
         let managerHTML = `
             <div class="card w-25 bg-light m-3 shadow rounded">
                 <div class ="card-header text-light">
@@ -166,14 +166,14 @@ function getInternInfo() {
         let internHTML = `
             <div class="card w-25 bg-light m-3 shadow rounded">
                 <div class="card-header text-light">
-                    <h2 class="name>${newIntern.name}</h2>
+                    <h2 class="name">${newIntern.name}</h2>
                     <h3 class="title">${newIntern.role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush border">
                         <li class="list-group-item">ID: ${newIntern.id}</li>
                         <li class="list-group-item">Email: <a href="mailto:${newIntern.email}">${newIntern.email}</a></li>
-                        <li class="list-item-group">School: ${newIntern.school}</li>
+                        <li class="list-group-item">School: ${newIntern.school}</li>
                     </ul>
                 </div>
             </div>
