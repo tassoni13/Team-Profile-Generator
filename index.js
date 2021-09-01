@@ -193,7 +193,7 @@ function writeHTML() {
             <title>Team Profile Generator</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
             <script src="https://kit.fontawesome.com/7ca837e95d.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="./style.css"/>
+            <link rel="stylesheet" href="./style.css">
         </head>
     
         <body>
